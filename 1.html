@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+
+    <form id="registrationform">
+        <h1 class="blink">Registration Form</h1>
+        <label class="text" for=" Name"><bold>Full Name:</bold></label>
+        <input type="text" id="Name" placeholder="Enter your name">
+        <br>
+        <label class="text" for="Email">Email:</label>
+        <input type="text" id="Email" placeholder="Enter your email">
+        <br>
+        <label class="text" for="Mobile">Mobile No.:</label>
+        <input type="number" id="Mobile" placeholder="Enter your Mobile no.">
+        <br>
+        <label class="text" for="age">Age:</label>
+        <input type="number" id="age" placeholder="Enter your age">
+        <br>
+        <label class="text" for="eventDropdown">Events:</label>
+        <select id="eventDropdown">
+            <option value="">Select Event</option>
+            <option value="event1">Event1</option>
+            <option value="event2">Event2</option>
+            <option value="event3">Event3</option>
+        </select>
+        <br>
+        <label class="text" for="eventTime">Time:</label>
+        <select id="eventTime">
+            <option value="">Select Event Time</option>
+            <option value="event1">Morning</option>
+            <option value="event2">Afternoon</option>
+            <option value="event3">Evening</option>
+        </select>
+        <br>
+        <p class="terms"><a href="terms.html" target="_blank">Terms and Conditions</a></p> 
+        <input type="checkbox" id="agreeCheckbox" onchange="enableButton()" >Agree Terms and Conditions <br>
+        <br>
+        <button id="registerButton" disabled>Submit</button>
+    </form>
+
+</body>
+<script src="script.js"></script>
+
+</html>
